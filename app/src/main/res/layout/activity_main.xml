@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/teamA"
+                style="@style/scoreButton"
+                android:text="Team A" />
+
+            <TextView
+                android:id="@+id/scoreTeamA"
+                style="@style/scoreButton"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/addTryTeamA"
+                style="@style/scoreButton"
+                android:text="Try" />
+
+            <Button
+                android:id="@+id/addDropTeamA"
+                style="@style/scoreButton"
+                android:text="DROP GOAL" />
+
+            <Button
+                android:id="@+id/addPentaltyTeamA"
+                style="@style/scoreButton"
+                android:text="Penalty" />
+
+            <Button
+                android:id="@+id/addConversionTeamA"
+                style="@style/scoreButton"
+                android:text="Conversion" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/teamB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team A" />
+
+            <TextView
+                android:id="@+id/scoreTeamB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/addTryTeamB"
+                style="@style/scoreButton"
+                android:text="Try" />
+
+            <Button
+                android:id="@+id/addDropTeamB"
+                style="@style/scoreButton"
+                android:text="DROP GOAL" />
+
+            <Button
+                android:id="@+id/addPentaltyTeamB"
+                style="@style/scoreButton"
+                android:text="Penalty" />
+
+            <Button
+                android:id="@+id/addConversionTeamB"
+                style="@style/scoreButton"
+                android:text="Conversion" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/bonus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/reset"
+        android:text="Button" />
+</RelativeLayout>
