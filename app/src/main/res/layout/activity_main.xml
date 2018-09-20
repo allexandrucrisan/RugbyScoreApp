@@ -21,12 +21,12 @@
 
             <TextView
                 android:id="@+id/teamA"
-                style="@style/scoreButton"
+                style="@style/textDesign"
                 android:text="Team A" />
 
             <TextView
                 android:id="@+id/scoreTeamA"
-                style="@style/scoreButton"
+                style="@style/textDesign"
                 android:text="0" />
 
             <Button
