@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
             scoreTeamB = scoreTeamB + 4;
             displayForTeamA(scoreTeamA);
             displayForTeamB(scoreTeamB);
-        } else if (scoreTeamA == scoreTeamB) {
+        } else (scoreTeamA == scoreTeamB) {
             scoreTeamB = scoreTeamB + 2;
             scoreTeamA = scoreTeamA + 2;
             displayForTeamA(scoreTeamA);
