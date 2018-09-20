@@ -2,7 +2,6 @@ package com.example.android.rugbyscoreapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.TextureView;
 import android.view.View;
 import android.widget.TextView;
 
@@ -20,45 +19,45 @@ public class MainActivity extends AppCompatActivity {
 
     /* Display the score for Team A */
     public void displayForTeamA(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.team_a_score);
+        TextView scoreView = findViewById(R.id.team_a_score);
         scoreView.setText(String.valueOf(score));
     }
 
     /* Display the score for Team B */
     public void displayForTeamB(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.team_b_score);
+        TextView scoreView = findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(score));
     }
 
     /* Team A buttons */
     public void addFiveTeamA(View view) {
-        scoreTeamA = scoreTeamA + 5;
+        scoreTeamA += 5;
         displayForTeamA(scoreTeamA);
     }
 
     public void addThreeTeamA(View view) {
-        scoreTeamA = scoreTeamA + 3;
+        scoreTeamA += 3;
         displayForTeamA(scoreTeamA);
     }
 
     public void addtwoTeamA(View view) {
-        scoreTeamA = scoreTeamA + 2;
+        scoreTeamA +=2;
         displayForTeamA(scoreTeamA);
     }
 
     /* Team B buttons */
     public void addFiveTeamB(View view) {
-        scoreTeamB = scoreTeamB + 5;
+        scoreTeamB += 5;
         displayForTeamB(scoreTeamB);
     }
 
     public void addThreeTeamB(View view) {
-        scoreTeamB = scoreTeamB + 3;
+        scoreTeamB += 3;
         displayForTeamB(scoreTeamB);
     }
 
     public void addtwoTeamB(View view) {
-        scoreTeamB = scoreTeamB + 2;
+        scoreTeamB +=2;
         displayForTeamB(scoreTeamB);
     }
 
@@ -85,7 +84,6 @@ public class MainActivity extends AppCompatActivity {
         displayForTeamA(scoreTeamA);
         displayForTeamB(scoreTeamB);
     }
-
 }
 
 
